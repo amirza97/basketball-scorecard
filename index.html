@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class= "home">
+            <h2>HOME</h2>
+            <h3 id ="home-score">0</h3>
+            <div class = "buttons">
+                <button id = "plusOneHome" onclick="addOneHome()">+1</button>
+                <button id = "plusTwoHome" onclick="addTwoHome()">+2</button>
+                <button id = "plusThreeHome" onclick="addThreeHome()">+3</button>
+            </div>
+            <button id = "home-reset" onclick="homeReset()">RESET</button>
+
+        </div>
+        <div class= "guest">
+            <h2>GUEST</h2>
+            <h3 id = "guest-score">0</h3>
+            <div class = "buttons">
+                <button id = "plusOneGuest" onclick="addOneGuest()">+1</button>
+                <button id = "plusTwoGuest" onclick="addTwoGuest()">+2</button>
+                <button id = "plusThreeGuest" onclick="addThreeGuest()">+3</button>  
+            </div>
+            <button id = "guest-reset" onclick="guestReset()">RESET</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
